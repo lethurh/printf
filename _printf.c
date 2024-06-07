@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
-#include <stdio.h>
+
 
 /**
  *checker - checkes whether next format is identifier
@@ -59,8 +59,8 @@ int _printf(const char *format, ...)
 				get = checker(arr, format[i + 1]);
 				if (get == 1)
 				{
-					j += putchar(format[i]);
-					j += putchar(format[i + 1]);
+					j += _putchar(format[i]);
+					j += _putchar(format[i + 1]);
 					i++;
 				}
 				else
@@ -73,7 +73,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			j += putchar(format[i]);
+			j += _putchar(format[i]);
 		}
 		i++;
 	}

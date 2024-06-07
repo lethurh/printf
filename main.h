@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>
-
+#include <stdarg.h>
 
 /**
  * struct func_type - type structure
